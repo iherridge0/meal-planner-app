@@ -1,0 +1,9 @@
+/Users/irwinherridge/ieh/source/mpa-user-service/src/main/java/za/co/kooker/microservice/userservice/UserServiceApplication.java
+/Users/irwinherridge/ieh/source/mpa-user-service/src/main/java/za/co/kooker/microservice/userservice/entity/User.java
+/Users/irwinherridge/ieh/source/mpa-user-service/src/main/java/za/co/kooker/microservice/userservice/entity/ExceptionResponse.java
+/Users/irwinherridge/ieh/source/mpa-user-service/src/main/java/za/co/kooker/microservice/userservice/repository/UserRepository.java
+/Users/irwinherridge/ieh/source/mpa-user-service/src/main/java/za/co/kooker/microservice/userservice/resource/UserResource.java
+/Users/irwinherridge/ieh/source/mpa-user-service/src/main/java/za/co/kooker/microservice/userservice/entity/UserType.java
+/Users/irwinherridge/ieh/source/mpa-user-service/src/main/java/za/co/kooker/microservice/userservice/exception/UserNotFoundException.java
+/Users/irwinherridge/ieh/source/mpa-user-service/src/main/java/za/co/kooker/microservice/userservice/exception/CustomizedResponseEntityExceptionHandler.java
+/Users/irwinherridge/ieh/source/mpa-user-service/src/main/java/za/co/kooker/microservice/userservice/exception/UserAlreadyExistException.java

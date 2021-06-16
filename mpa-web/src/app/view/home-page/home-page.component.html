@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Etebeplanner</h1>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Resepnaam</th>
+                    <th>Publieke Status</th>
+                    <th>Opdateer</th>
+                    <th>Verwyder</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let meal of meals">
+                    <td id="mealName">{{meal.name}}</td>
+                    <td id="mealStatus">{{meal.status}}</td>
+                    <td><button id="updateMealBtn" (click)="updateMeal(meal.id)" class="btn btn-outline-secondary">Bekyk / Opdateer</button></td>
+                    <td><button id="deleteMealBtn" (click)="deleteMeal(meal.id)" class="btn btn-outline-danger">Verwyder</button></td>
+                </tr>
+            </tbody>
+        </table>
+           
+        <div class="row">
+            
+            <button id="createMealBtn" (click)="createMeal()" class="btn btn-outline-success">Voeg 'n nuwe resep by</button>
+        </div>
+    </div>
+</div>

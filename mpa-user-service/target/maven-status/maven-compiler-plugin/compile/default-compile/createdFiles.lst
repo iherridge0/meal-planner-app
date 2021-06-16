@@ -1,0 +1,10 @@
+za/co/kooker/microservice/userservice/entity/UserType.class
+za/co/kooker/microservice/userservice/repository/UserRepository.class
+za/co/kooker/microservice/userservice/UserServiceApplication.class
+za/co/kooker/microservice/userservice/entity/User.class
+za/co/kooker/microservice/userservice/UserServiceApplication$1.class
+za/co/kooker/microservice/userservice/exception/CustomizedResponseEntityExceptionHandler.class
+za/co/kooker/microservice/userservice/resource/UserResource.class
+za/co/kooker/microservice/userservice/exception/UserAlreadyExistException.class
+za/co/kooker/microservice/userservice/exception/UserNotFoundException.class
+za/co/kooker/microservice/userservice/entity/ExceptionResponse.class

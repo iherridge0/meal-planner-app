@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: za.co.ieh.mpa.microservices.netflixeurekanamingserver.NetflixEurekaNamingServerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.588 s - in za.co.ieh.mpa.microservices.netflixeurekanamingserver.NetflixEurekaNamingServerApplicationTests

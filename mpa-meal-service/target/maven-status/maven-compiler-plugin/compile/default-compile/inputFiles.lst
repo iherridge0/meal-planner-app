@@ -1,0 +1,14 @@
+/Users/irwinherridge/ieh/source/mpa-meal-service/src/main/java/za/co/ieh/mpa/miroservices/mealservice/repository/MealRepository.java
+/Users/irwinherridge/ieh/source/mpa-meal-service/src/main/java/za/co/ieh/mpa/miroservices/mealservice/entity/Gallary.java
+/Users/irwinherridge/ieh/source/mpa-meal-service/src/main/java/za/co/ieh/mpa/miroservices/mealservice/exception/MealNotFoundException.java
+/Users/irwinherridge/ieh/source/mpa-meal-service/src/main/java/za/co/ieh/mpa/miroservices/mealservice/MealServiceApplication.java
+/Users/irwinherridge/ieh/source/mpa-meal-service/src/main/java/za/co/ieh/mpa/miroservices/mealservice/entity/Meal.java
+/Users/irwinherridge/ieh/source/mpa-meal-service/src/main/java/za/co/ieh/mpa/miroservices/mealservice/entity/Ingredient.java
+/Users/irwinherridge/ieh/source/mpa-meal-service/src/main/java/za/co/ieh/mpa/miroservices/mealservice/resource/IngredientsResource.java
+/Users/irwinherridge/ieh/source/mpa-meal-service/src/main/java/za/co/ieh/mpa/miroservices/mealservice/resource/ShoppingListResource.java
+/Users/irwinherridge/ieh/source/mpa-meal-service/src/main/java/za/co/ieh/mpa/miroservices/mealservice/repository/GallaryRepository.java
+/Users/irwinherridge/ieh/source/mpa-meal-service/src/main/java/za/co/ieh/mpa/miroservices/mealservice/repository/IngredientRepository.java
+/Users/irwinherridge/ieh/source/mpa-meal-service/src/main/java/za/co/ieh/mpa/miroservices/mealservice/entity/ExceptionResponse.java
+/Users/irwinherridge/ieh/source/mpa-meal-service/src/main/java/za/co/ieh/mpa/miroservices/mealservice/exception/CustomizedResponseEntityExceptionHandler.java
+/Users/irwinherridge/ieh/source/mpa-meal-service/src/main/java/za/co/ieh/mpa/miroservices/mealservice/resource/MealResource.java
+/Users/irwinherridge/ieh/source/mpa-meal-service/src/main/java/za/co/ieh/mpa/miroservices/mealservice/resource/PublicMealResource.java

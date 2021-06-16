@@ -1,0 +1,14 @@
+/Users/irwinherridge/ieh/source/netflix-zuul-api-gateway-server/src/main/java/za/co/iherridge0/microservices/netflixzuulapigatewayserver/repository/UserRepository.java
+/Users/irwinherridge/ieh/source/netflix-zuul-api-gateway-server/src/main/java/za/co/iherridge0/microservices/netflixzuulapigatewayserver/jwt/JWTWebSecurityConfig.java
+/Users/irwinherridge/ieh/source/netflix-zuul-api-gateway-server/src/main/java/za/co/iherridge0/microservices/netflixzuulapigatewayserver/jwt/JwtJPAUserDetailsService.java
+/Users/irwinherridge/ieh/source/netflix-zuul-api-gateway-server/src/main/java/za/co/iherridge0/microservices/netflixzuulapigatewayserver/jwt/resource/AuthenticationException.java
+/Users/irwinherridge/ieh/source/netflix-zuul-api-gateway-server/src/main/java/za/co/iherridge0/microservices/netflixzuulapigatewayserver/entity/Login.java
+/Users/irwinherridge/ieh/source/netflix-zuul-api-gateway-server/src/main/java/za/co/iherridge0/microservices/netflixzuulapigatewayserver/jwt/JwtTokenUtil.java
+/Users/irwinherridge/ieh/source/netflix-zuul-api-gateway-server/src/main/java/za/co/iherridge0/microservices/netflixzuulapigatewayserver/jwt/JwtUserDetails.java
+/Users/irwinherridge/ieh/source/netflix-zuul-api-gateway-server/src/main/java/za/co/iherridge0/microservices/netflixzuulapigatewayserver/jwt/JwtUnAuthorizedResponseAuthenticationEntryPoint.java
+/Users/irwinherridge/ieh/source/netflix-zuul-api-gateway-server/src/main/java/za/co/iherridge0/microservices/netflixzuulapigatewayserver/jwt/resource/JwtTokenResponse.java
+/Users/irwinherridge/ieh/source/netflix-zuul-api-gateway-server/src/main/java/za/co/iherridge0/microservices/netflixzuulapigatewayserver/ZuulLogginFilter.java
+/Users/irwinherridge/ieh/source/netflix-zuul-api-gateway-server/src/main/java/za/co/iherridge0/microservices/netflixzuulapigatewayserver/jwt/resource/JwtAuthenticationRestController.java
+/Users/irwinherridge/ieh/source/netflix-zuul-api-gateway-server/src/main/java/za/co/iherridge0/microservices/netflixzuulapigatewayserver/jwt/JwtTokenAuthorizationOncePerRequestFilter.java
+/Users/irwinherridge/ieh/source/netflix-zuul-api-gateway-server/src/main/java/za/co/iherridge0/microservices/netflixzuulapigatewayserver/NetflixZuulApiGatewayServerApplication.java
+/Users/irwinherridge/ieh/source/netflix-zuul-api-gateway-server/src/main/java/za/co/iherridge0/microservices/netflixzuulapigatewayserver/jwt/resource/JwtTokenRequest.java

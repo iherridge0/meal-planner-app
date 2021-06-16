@@ -1,0 +1,23 @@
+<main class="form-login">
+    <h1 class="h3 mb-3 fw-normal">Meld asseblief aan</h1>
+    <form (ngSubmit)="handleAuthLogin()">
+        <div class="alert alert-warning" *ngIf='exceceptionHandlingService.errorMessage'>{{errorMessage}}</div>
+
+        <div>
+            <div>
+                <input type="text" id="username" [(ngModel)]="username"class="form-control" 
+                placeholder="Gebruikersnaam" [ngModelOptions]="{standalone: true}">
+            </div>
+            <div>
+                <input type="password" id="password" [(ngModel)]="password"class="form-control" 
+                placeholder="Wagwoord" [ngModelOptions]="{standalone: true}">
+            </div>
+            <br>
+            <button id="login" type="submit" class="w-100 btn btn-lg btn-info">Teken aan</button>
+
+        </div>
+
+    </form>
+    <br>
+    <button class="w-100 btn btn-lg btn-dark" (click)="register()">Registreer</button>
+</main>

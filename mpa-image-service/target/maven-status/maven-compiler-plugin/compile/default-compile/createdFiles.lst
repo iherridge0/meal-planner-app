@@ -1,0 +1,9 @@
+za/co/kooker/microservices/imageservice/entity/Image.class
+za/co/kooker/microservices/imageservice/resource/ImageResource.class
+za/co/kooker/microservices/imageservice/exception/CustomizedResponseEntityExceptionHandler.class
+za/co/kooker/microservices/imageservice/entity/Gallary.class
+za/co/kooker/microservices/imageservice/ImageServiceApplication.class
+za/co/kooker/microservices/imageservice/repository/ImageService.class
+za/co/kooker/microservices/imageservice/repository/GallaryRepository.class
+za/co/kooker/microservices/imageservice/entity/ExceptionResponse.class
+za/co/kooker/microservices/imageservice/ImageServiceApplication$1.class

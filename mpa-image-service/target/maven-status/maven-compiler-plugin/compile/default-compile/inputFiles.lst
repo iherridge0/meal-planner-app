@@ -1,0 +1,8 @@
+/Users/irwinherridge/ieh/source/mpa-image-service/src/main/java/za/co/kooker/microservices/imageservice/entity/Image.java
+/Users/irwinherridge/ieh/source/mpa-image-service/src/main/java/za/co/kooker/microservices/imageservice/repository/ImageService.java
+/Users/irwinherridge/ieh/source/mpa-image-service/src/main/java/za/co/kooker/microservices/imageservice/ImageServiceApplication.java
+/Users/irwinherridge/ieh/source/mpa-image-service/src/main/java/za/co/kooker/microservices/imageservice/resource/ImageResource.java
+/Users/irwinherridge/ieh/source/mpa-image-service/src/main/java/za/co/kooker/microservices/imageservice/entity/ExceptionResponse.java
+/Users/irwinherridge/ieh/source/mpa-image-service/src/main/java/za/co/kooker/microservices/imageservice/repository/GallaryRepository.java
+/Users/irwinherridge/ieh/source/mpa-image-service/src/main/java/za/co/kooker/microservices/imageservice/entity/Gallary.java
+/Users/irwinherridge/ieh/source/mpa-image-service/src/main/java/za/co/kooker/microservices/imageservice/exception/CustomizedResponseEntityExceptionHandler.java

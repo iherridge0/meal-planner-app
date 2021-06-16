@@ -1,0 +1,32 @@
+<main class="form-register">
+    <form (ngSubmit)="saveUser()">
+
+        <h1 class="h3 mb-3 fw-normal">Registreer 'n nuwe gebruiker</h1>
+        <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+            <strong>Oh snap</strong> {{errorMessage}}
+          </div>
+
+        <div>
+            <div>
+                <input type="text" id="username" class="form-control"
+                placeholder="Voer 'n unieke gebruikersnaam in, wees kreatief!" [(ngModel)]="newUser.username" [ngModelOptions]="{standalone: true}">
+            </div>
+            <div>
+                <input type="password" id="password" class="form-control"
+                placeholder="Sleutel jou wagwoord in" [(ngModel)]="newUser.password" [ngModelOptions]="{standalone: true}">
+            </div>
+            <div>
+                <input type="email" id="email" class="form-control"
+                placeholder="Voer 'n e-posadres in" [(ngModel)]="newUser.email" [ngModelOptions]="{standalone: true}">
+            </div>
+            <div>
+                <input type="date" id="birthdate" class="form-control"
+                 [(ngModel)]="newUser.birthDate" [ngModelOptions]="{standalone: true}">
+            </div>
+            <br>
+            <button type="submit" class="w-100 btn btn-lg btn-info">Registreer</button>
+            <button class="w-100 btn btn-lg btn-dark" (click)="back()">Terug</button>
+        </div>
+        
+    </form>
+</main>

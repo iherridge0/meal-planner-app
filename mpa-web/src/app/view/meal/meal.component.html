@@ -1,0 +1,176 @@
+<div class="container">
+    <h1>Etebeplanner</h1>
+    <div class="container row">            
+        <div class="col-md-8"> 
+            <div *ngIf="newMeal()">
+                <h3>Nuwe resep</h3>
+                <br>
+                <form (ngSubmit)="saveMeal()">
+                    <fieldset class="form-group">
+                        <label for="editName">Resepnaam</label>
+                        <input type="text" id="editName"class="form-control" required="required" [(ngModel)]="meal.name" [ngModelOptions]="{standalone: true}" autofocus>
+                        <label for="editDescription">Resepbeskrywing</label>
+                        <textarea id="editDescription" class="form-control" name="editDescription"
+                                rows="5" cols="33" [(ngModel)]="meal.description" [ngModelOptions]="{standalone: true}">
+                        {{meal.description}}
+                        </textarea>
+                    </fieldset>
+                    
+                    <button class="btn btn-outline-warning float-right" id="backBtn" (click)=back()>Kanselleer</button>
+                    <button type=submit class="btn btn-outline-success">Stoor</button>
+                    
+                </form>
+            </div>
+        
+            <div *ngIf="!newMeal()" class="container">
+                <!-- Details about the meal -->
+                <form (ngSubmit)="saveMeal()">       
+                    <br>    
+                    <i>Besonderhede oor die ete</i>
+                    <br>   <br>  
+                    <fieldset class="form-group">   
+                        <b>Resepnaam</b><br/>
+                        <label *ngIf="!edit" (click)="toggleEdit()">{{meal.name}}</label>
+                        
+                        <input *ngIf="edit" type="text" class="form-control" required="required" [(ngModel)]="meal.name"
+                            [ngModelOptions]="{standalone: true}" width="80%">
+                    </fieldset>
+                </form>
+                <form (ngSubmit)="saveMeal()">            
+                    <fieldset class="form-group">
+                        <b>Resepbeskrywing</b><br/>
+                        <label *ngIf="!edit" (click)="toggleEdit()">{{meal.description}}</label>
+                        <textarea *ngIf="edit" class="form-control" name="editDescription"
+                                rows="5" cols="33" [(ngModel)]="meal.description" [ngModelOptions]="{standalone: true}">
+                        {{meal.description}}
+                        </textarea>
+                    </fieldset>
+                    <button *ngIf="edit" type=submit class="btn btn-outline-success">Opdateer</button>
+                </form>
+                
+                <!-- Toggles whether the meal is PRIVATE or made PUBLIC so other users can view it. -->
+                <!-- <input id="status"  type="checkbox" required="required" [(ngModel)]="meal.status"
+                            [ngModelOptions]="{standalone: true}">
+                <label for="status"></label> -->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="defaultCheck1" [(ngModel)]="meal.status" [ngModelOptions]="{standalone: true}" (click)="changePrivacyStatus()">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Merk hierdie kassie om hierdie maaltyd aan ander gebruikers op Kooker.co.za beskikbaar te stel
+                    </label>
+                  </div>
+        
+                <!--  -->
+                <br>
+
+                <!-- </div>   
+                    <hr />        
+                    <div class="container row">    
+                        <div class="col-md-12"> 
+                            <div *ngIf=message>{{message}}</div>  
+                        </div>
+                    </div>
+                    <div class="container row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="name" placeholder="image name" [(ngModel)]="imageName"
+                                 name="name" />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="button" (click)="getImage()" value="Get Image">
+                        </div>
+                    </div>
+                    
+                    <div class="container row">            
+                        <div class="col-md-12">           
+                            <div *ngIf=retrievedImage>          
+                                <img [src]="retrievedImage">          
+                            </div>          
+                        </div>
+                    </div> -->
+                <!--  -->
+                
+                <!-- Show / Add Ingredients Section -->
+                <h2>Kook Bestanddele</h2>
+                <table class="table" *ngIf="!edit">
+                    <thead>
+                        <tr>
+                            <th>Bestanddeelnaam</th>
+                            <th>Bestanddeel Hoeveelheid</th>
+                            <th>Aksie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let ingredient of meal.ingredients">
+                            
+                            <td (click)="toggleEdit()">
+                                {{ingredient.name}}
+                            </td>
+                            <td (click)="toggleEdit()">
+                                {{ingredient.quantity}}
+                            </td>
+                            <td>
+                                <button class="btn btn-outline-danger" (click)="deleteIngredient(ingredient.id)">Verwyder</button>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="name" [(ngModel)]="newIngredient.name" [ngModelOptions]="{standalone: true}">
+                            </td>
+                            <td>
+                                <input type="text" placeholder="quantity" [(ngModel)]="newIngredient.quantity" [ngModelOptions]="{standalone: true}">
+                            </td>
+                            <td>
+                                <button class="btn btn-outline-success" (click)="saveIngredient()">Voeg 'n bestanddeel by</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table" *ngIf="edit">
+                    <thead>
+                        <tr>
+                            <th>Bestanddeelnaam</th>
+                            <th>Bestanddeel Hoeveelheid</th>
+                            <th>Aksie</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let ingredient of meal.ingredients">
+                            <td>
+                                <input type="text" placeholder="name" [(ngModel)]="ingredient.name" [ngModelOptions]="{standalone: true}">
+                            </td>
+                            <td>
+                                <input type="text" placeholder="quantity" [(ngModel)]="ingredient.quantity" [ngModelOptions]="{standalone: true}">
+                            </td>
+                            <td>
+                                <button class="btn btn-outline-success" (click)="updateIngredient(ingredient.id, ingredient.name, ingredient.quantity)">Voeg 'n bestanddeel by</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <button class="btn btn-outline-secondary" id="backBtn" (click)=back()>Gaan terug na u maaltydbeplanner</button>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">         
+            <div class="row">
+                <div *ngIf="meal.gallaries.length > 0" class="form-meal-img">
+                    <img src="{{meal.gallaries[0].url}}">
+                </div>
+                <div *ngIf="meal.gallaries.length == 0">    
+                    <div class="row" >
+                        <input type="file"  id="customFile" class="custom-file-input" (change)="onFileChanged($event)">  
+                        <label class="custom-file-label" for="customFile">Kies u resep-profielbeeld</label>
+                    </div>
+                </div>
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="defaultCheck1" [(ngModel)]="meal.status" [ngModelOptions]="{standalone: true}" (click)="changePrivacyStatus()">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Merk hierdie kassie om hierdie maaltyd aan ander gebruikers op Kooker.co.za beskikbaar te stel
+                    </label>
+                </div>   
+            </div>
+                     
+        </div>
+    </div>
+    
+</div>

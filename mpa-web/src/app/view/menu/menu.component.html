@@ -1,0 +1,30 @@
+<header>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="form-inline">
+            <a href="https://www.kooker.co.za" class="navbar-brand">Kooker.co.za</a>
+            <a routerLink="/meal-search"
+                        class="nav-link">Soek</a>
+            <a *ngIf="authenticationService.isUserLoggedIn()" routerLink="/home" class="nav-link">Konkoksies</a>
+        </div>
+        
+        <div class="form-inline">
+            <form  *ngIf="!authenticationService.isUserLoggedIn()" (ngSubmit)="handleAuthLogin()">
+                <input type="text" id="username" [(ngModel)]="username" class="form-control mr-sm-2"
+                    placeholder="Gebruikersnaam" [ngModelOptions]="{standalone: true}">
+
+                <input type="password" id="password" [(ngModel)]="password"  class="form-control mr-sm-2"  
+                    placeholder="Wagwoord" [ngModelOptions]="{standalone: true}">
+
+                <button id="login" type="submit" class="btn btn-outline-info mr-sm-2" >Teken aan</button>
+                
+            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+            </form>
+            <button *ngIf="!authenticationService.isUserLoggedIn()" class="btn btn-outline-light mr-sm-2" (click)="register()">Registreer</button>
+            <a *ngIf="authenticationService.isUserLoggedIn()" routerLink="/logout" class="nav-link">Teken uit</a>
+        </div>
+      </nav>
+
+</header>
+
+

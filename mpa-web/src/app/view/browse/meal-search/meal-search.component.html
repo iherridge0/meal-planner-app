@@ -1,0 +1,25 @@
+<div class="container">
+    <br>
+    <div>
+        <div class="md-form mt-0">
+            <input class="form-control" type="text" placeholder="Search" aria-label="Search" 
+                (keyup)="onKey($event)">
+        </div>
+        <table class="table">
+            <!-- <thead>
+                <tr>
+                    <th>Resepte:</th>
+                </tr>
+            </thead> -->
+            <tbody>
+                <tr *ngFor="let meal of meals">
+                    <td> <img class="thumbnail-img" *ngIf="meal.gallaries.length > 0" src="{{meal.gallaries[0].url}}"></td>
+                    <td id="mealName">
+                        <h1>{{meal.name}}</h1>
+                        <p>{{meal.description}}</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
